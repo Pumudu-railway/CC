@@ -9,10 +9,10 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon import events
 
-SESSION = '1BVtsOJEBu1VguGFMLAhCTt-jP_MEDqy_CwXGFRbLOyrqYxcBUjh-nLk6avtgUCdhmlm57bPaYieajHDTSevFFKsuksOA9ASP0oswDu0cmzCQelPL4ZiPdo8i1XkSRuNeYms4euT-qNDKCeXT_QVO64Kdt-Y5MwYpFyWP4I9r0amjGzwnlDdAiX4cqT6Jj4YpUZtFFLr5p0t0nEdyEcqt-82VQKXK7oibQArjw5Hqsd6sIZVTFXI0Ag-pDS8_nIZ4mGdCtiNGReTeqC0Vn1ecF44beb0siQ0oy799rxS6PYtPeaGvVvDmuwbcA0ekFcdCldUIGBIZDX9fg5fvQEeV-TtsXAl50p8='
-API_ID = '18261436'
-API_HASH = '3889e30c185133e374bbf2eebacdb85a'
-LOG_GROUP = -602987124
+SESSION = '1AZWarzsBuxhLbPMiIMDMn5pz1llURS0tgEO6ealchpbaVyF5rFXvCR-xHHPLrQKH7pj6w_81kAXpnEjMV5geUrGhBjtSRv7jl-HGxvN02jKt4QG7P3hANr5zj04ncKUNpFtlYmHtouW68mRPRRyY2pldSjya4jB-HeSpv63qyFuadcPfjBuq7lpCZJ3_-2MLd8hAXgMy7hvzHqAJ8GgnJjwZ7H0yF_ubcK9SPaPlMFw_yPAMPAM9HNBfKWqOWVNSN0sFpJSrH2kQjXsNyJxGkVuzEQ5BumgE75g5VHTEPx_QUSAKLcMoYdOHuGllqYUSU9bq6lcQhVGHItZvqvoEeu7_hJH3vdU='
+API_ID = '7493075'
+API_HASH = 'ab7d7ab8d1e8cdb4bcbfdf18fa88e2b5'
+LOG_GROUP = -6-673632503
 
 
 bot = TelegramClient(StringSession(SESSION), API_ID, API_HASH)
@@ -39,7 +39,7 @@ async def runner(event):
             await bot.send_message(LOG_GROUP, final_card)
             bin = bin + 1
             time.sleep(20)
-    mention = '@Phantasm_XD'
+    mention = '@asas'
     await bot.send_message(LOG_GROUP, mention)
 
 bot.run_until_disconnected()
